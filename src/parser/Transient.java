@@ -17,6 +17,7 @@ public class Transient {
 	private String FERMI_GBM_prob_change;
 	private String FERMI_GBM_average_flux;
 	private String FERMI_GBM_data;
+	
 	public String getName() {
 		return name;
 	}
