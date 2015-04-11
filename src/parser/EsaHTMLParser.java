@@ -8,7 +8,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-public class HTMLParser {
+public class EsaHTMLParser implements Parser {
 	private final String MAIN_PAGE_URL = "http://integral.esac.esa.int/bexrbmonitor/webpage_oneplot.php";
 	private final int MAIN_PAGE_TABLE_NUMBER = 0;
 	private final int NAME_TABLE_NUMBER = 3;
@@ -23,7 +23,7 @@ public class HTMLParser {
 		return all_rows;
 	}
 	
-	public void parse_main_page() throws IOException {
+	public void parse_html_table() throws IOException {
 		String url = "http://integral.esac.esa.int/bexrbmonitor/webpage_oneplot.php";
 		
 		/**
